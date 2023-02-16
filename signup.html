@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
+    <style>
+        .buy-sell-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #4db6ac;
+  color: #fff;
+}
+
+
+
+    </style>
+  </head>
+  <body>
+    <section class="hero is-fullheight is-light">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <div class="column is-4 is-offset-4">
+            <h3 class="title has-text-black">Signup</h3>
+            <hr class="login-hr">
+            <p class="subtitle has-text-black">Please sign up to proceed.</p>
+            <div class="box">
+              <form action="">
+                <div class="field">
+                  <div class="control">
+                    <input class="input is-medium" type="text" placeholder="Name">
+                  </div>
+                </div>
+
+                <div class="field">
+                  <div class="control">
+                    <input class="input is-medium" type="text" placeholder="Email">
+                  </div>
+                </div>
+
+                <div class="field">
+                  <div class="control">
+                    <input class="input is-medium" type="password" placeholder="Password">
+                  </div>
+                </div>
+
+                <div class="field">
+                  <div class="control">
+                    <input class="input is-medium" type="password" placeholder="Confirm Password">
+                  </div>
+                </div>
+                <button class="button is-block is-info is-medium is-fullwidth">Signup</button>
+              </form>
+            </div>
+            <p class="has-text-grey">
+              <a href="login.html">Login</a> &nbsp;·&nbsp;
+              <a href="../">Forgot Password</a> &nbsp;·&nbsp;
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="buy-sell-toggle">
+        <input type="radio" name="buy-sell" id="buy" value="buy" checked>
+        <label for="buy">Buy</label>
+      
+        <input type="radio" name="buy-sell" id="sell" value="sell">
+        <label for="sell">Sell</label>
+      </div>
+      
+      <script>
+
+        function toggleBuySell() {
+          const buyerSignUp = document.getElementById("buy");
+          const sellerSignUp = document.getElementById("sell");
+          
+
+          sellerSignUp.onclick = function changeBackground(){
+             document.body.style.backgroundColor = "red";
+          }
+          buyerSignUp.onclick = function changeBackgroundBack(){
+            document.body.style.backgroundColor = "white";
+          }
+  const buyButton = document.getElementById("buy-button");
+  const sellButton = document.getElementById("sell-button");
+
+  buyButton.addEventListener("click", function() {
+    buyButton.classList.add("is-active");
+    sellButton.classList.remove("is-active");
+  });
+
+  sellButton.addEventListener("click", function() {
+    sellButton.classList.add("is-active");
+    buyButton.classList.remove("is-active");
+  });
+}
+
+document.addEventListener("DOMContentLoaded", toggleBuySell);
+
+      </script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us - Raffle-it</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  </head>
+  <body>
+    <!-- header -->
+    <header class="navbar is-primary">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+              Raffle E-Commerce
+            </a>
+          </div>
+          <div class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item" href="homepage.html">Home</a>
+              <a class="navbar-item" href="saleslist.html">Shop</a>
+              <a class="navbar-item" href="about.html">About</a>
+              <a class="navbar-item" href="contact.html">Contact</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+    <!-- main content -->
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-three-quarters">
+            <h2 class="title">Get in Touch</h2>
+            <p>
+              If you have any questions or concerns, we would love to hear from you. 
+              Please fill out the form below and one of our representatives will get back to you as soon as possible.
+            </p>
+
+            <!-- contact form -->
+            <form action="submit-form.php" method="post">
+              <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                  <input class="input" type="text" name="name" placeholder="Your Name">
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                  <input class="input" type="email" name="email" placeholder="Email Address">
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                  <textarea class="textarea" name="message" placeholder="Your Message"></textarea>
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="control">
+                  <button class="button is-primary" type="submit">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="column">
+            <h2 class="title">Additional Information</h2>
+            <p>
+              Email: support@raffle-it.com
+            </p>
+            <p>
+              Phone: (123) 456-7890
+            </p>
+            <p>
+              Address: 123 Main St, Anytown, USA 12345
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

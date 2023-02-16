@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+</head>
+<body>
+  
+
+<head>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .background {
+      background-image: url("https://image.freepik.com/free-vector/abstract-polygonal-background_23-2148260745.jpg");
+      background-size: cover;
+      width: 100%;
+      height: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: medium;
+    }
+
+    .background h1 {
+      color: white;
+      text-shadow: 2px 2px 4px black;
+    }
+
+    .list {
+      background-color: rgba(128, 128, 128, 0.811);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .list li {
+      list-style-type: none;
+      margin-left: 60px;
+    }
+
+    .list li i {
+      margin-right: 10px;
+    }
+
+    .buy {
+      background-color: green;
+      width: 50%;
+      position: absolute;
+      right: 0%;
+      height: 100%;
+      margin: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      border-radius: 25px;
+      opacity: 0.1;
+      transition: all 0.2s;
+    }
+
+    .sell {
+
+      background-color: red;
+      width: 50%;
+      height: 100%;  /* set the height to 100% */
+      margin: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      border-radius: 25px;
+      opacity: 0.1;
+      transition: all 0.2s;
+    
+    }
+
+    .buy:hover {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+
+    .sell:hover {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    </style>
+    <body>
+  <header class="navbar is-primary">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+          Raffle E-Commerce
+        </a>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item" href="homepage.html">Home</a>
+          <a class="navbar-item" href="saleslist.html">Shop</a>
+          <a class="navbar-item" href="about.html">About</a>
+          <a class="navbar-item" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <div class="buy" id="scriptBuy" style="position: absolute; right: 0; bottom: 30px;">buy</div>
+  <div class="sell" id="scriptSell" style="position: absolute; left: 0; bottom: 30px;">sell</div>
+</body>
+
+<script>
+const buy = document.getElementById("scriptBuy");
+const sell = document.getElementById("scriptSell");
+sell.onclick = function(){
+    //make the option to make this null with java later(i.e if the user is still logged on)
+    window.open("sellerLogon.html");
+}
+buy.onclick = function(){
+    window.open("logon.html");
+}
+</script>
+
+</html>

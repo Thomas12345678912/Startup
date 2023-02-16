@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Seller Logon Page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+  <header class="navbar is-primary">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#">
+         Seller Login Page
+        </a>
+      </div>
+      <div class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item"href="signup.html">Sign up</a>
+          <a class="navbar-item" href="homepage.html">Home</a>
+          <a class="navbar-item" href="saleslist.html">Shop</a>
+          <a class="navbar-item" href="about.html">About</a>
+          <a class="navbar-item" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="section">
+    <div class="container">
+      <h1 class="title animate__animated animate__fadeInDown"> Seller Login</h1>
+      <form class="form animate__animated animate__fadeInUp">
+        <div class="field">
+          <label class="label">Username</label>
+          <div class="control has-icons-left">
+            <input class="input" type="text" placeholder="Enter your username">
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Password</label>
+          <div class="control has-icons-left">
+            <input class="input" type="password" placeholder="Enter your password">
+            <span class="icon is-small is-left">
+              <i class="fas fa-lock"></i>
+            </span>
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <label class="checkbox">
+              <input type="checkbox">
+              Remember me
+            </label>
+          </div>
+        </div>
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-primary">Submit</button>
+          </div>
+          <div class="control">
+            <button class="button is-text"id = "cancel" href = "homepage.html">Cancel</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <script>
+
+const cancel = document.getElementById("cancel");
+function cancelItem (){
+  window.open("homepage.html");
+}
+
+
+
+
+  </script>
+</body>
+</html>

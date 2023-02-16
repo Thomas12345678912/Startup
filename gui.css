@@ -1,0 +1,63 @@
+#advancedbackground{
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+     background-image: url("https://media.istockphoto.com/id/675645602/photo/paper-boxes-in-a-shopping-cart.jpg?s=612x612&w=0&k=20&c=gF2TqGqn0hDTI1tWRUDVs36p8f5fIvXD4NyAQRMh6E4=");
+        animation: fade 30s ease infinite;
+        animation-direction: alternate;
+        background-repeat: no-repeat;
+        background-size: cover;
+    background-position: center;
+}
+
+
+
+@keyframes fade {
+    0% {
+      background-image: url("https://media.istockphoto.com/id/1379610301/photo/generic-modern-car-in-front-of-concrete-wall.jpg?s=612x612&w=0&k=20&c=2bqPScG-qvIeAm28_7IdjrIksWK1-dwx-p3ByUw1pbk=");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+background-position: center;
+
+    }
+    25%{
+        background-image: url("https://images.unsplash.com/photo-1502993100359-6e0cee23764d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=326&q=80");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+background-position: center;
+
+    }
+    50% {
+      background-image: url("https://plus.unsplash.com/premium_photo-1661342406124-740ae7a0dd0e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGx1bWJlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=2000&q=60");
+   background-repeat: no-repeat;
+   width: 100%;
+   height: 100%;
+   background-size: cover;
+background-position: center;
+
+    }
+    75%{
+        background-image: url("https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+   background-repeat: no-repeat;
+   width: 100%;
+   height: 100%;
+   background-size: cover;
+background-position: center;
+
+    }
+    100% {
+      background-image: url("https://images.unsplash.com/photo-1536133722384-dfd3f4b30831?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+background-position: center;
+
+    }
+   
+} 
+
